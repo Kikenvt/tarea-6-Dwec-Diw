@@ -1,0 +1,14 @@
+{
+  "name": "tarea.6",
+  "version": "1.0.0",
+  "description": "__Autor:__ Enrique Fernández - Campoamor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Enrique Fernandez-Campoamor Fernandez",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.71.0"
+  }
+}

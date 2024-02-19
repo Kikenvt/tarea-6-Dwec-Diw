@@ -1,0 +1,17 @@
+@use 'variables' as var;
+
+
+
+*, :after, :before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var.$black;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #b9b7b7;
+    font-family: var.$font-primary;
+  }

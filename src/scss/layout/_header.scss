@@ -1,0 +1,138 @@
+  @use '../base/variables' as var;
+  @use '../base/mixins' as mix;
+
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--nav-background-color);
+    box-shadow: 0 0 10px var(--shadow-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    height: 100%;
+  
+    a {
+      text-decoration: none;
+      color: #e4e1e1;
+      font-size: 1rem;
+      padding: 1rem;
+      gap: 1rem;
+  
+      /* transition: all 0.3s ease; */
+    }
+
+    a:hover {
+      filter: drop-shadow(0 0 0.8rem #a2b402);
+    }
+  }
+  
+  .nav-logo {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: var(--nav-logo-height);
+    height: 100%;
+  
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      margin: 0.3rem;
+    }
+  
+    img {
+      width: var(--nav-logo-height);
+      height: var(--nav-logo-width);
+      margin: 0 0 0 1rem;
+    }
+  }
+  
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 2rem;
+    height: 100%;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+  }
+  
+  .line {
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger-menu.open .line {
+    &:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    &:nth-child(2) {
+      opacity: 0;
+    }
+  
+    &:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  
+  @include mix.tablet {
+    .nav-list {
+      position: fixed;
+      left: -100%;
+      flex-direction: column;
+      justify-content: start;
+      top: 0;
+      background-color: var(--nav-background-color);
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  
+      &.active {
+        margin: 0;
+        padding: 0;
+        left: 0;
+      }
+    }
+  
+    .nav-item {
+      margin: 1rem 0;
+    }
+  
+    .hamburger-menu {
+      display: block;
+      cursor: pointer;
+      right: 0;
+    }
+  
+    .line {
+      background-color: white;
+  
+        &.open {
+            background-color: white;
+        }
+    }
+  }
