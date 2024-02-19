@@ -171,39 +171,38 @@ body {
 	}
 }
 
-.hero-container{
-    filter: drop-shadow(0 0 0.5rem #a2b402);
+.video{
+    position: relative;
+    max-height: 70rem;
+    min-height: 50rem;
+    overflow: hidden;
 }
 
-.hero-image {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background: url(/assets/imgs/metal-gear-solid-v-the-phantom-pain-4k-i3-1920x1080.jpg)
-		center/cover;
-	height: var(--hero-image-height);
-	position: relative;
-	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-    
-}
-
-.hero-image::before {
-	content: '';
+.overlay {
 	position: absolute;
-	opacity: 0.5;
-	width: 100%;
 	height: 100%;
-	background: #000000;
-    
-}
-
-.hero-body {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	position: relative;
+}
+
+.video video{
+	width: auto;
+	display: block;
+	
+}
+
+
+
+.contenido-video {
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
 	color: #fff;
 	text-align: center;
 }
