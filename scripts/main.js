@@ -1,3 +1,12 @@
+import { createGallery } from "./slider.js"
+import { darkMode } from "./darkMode.js";
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    createGallery();
+    darkMode();
+});
+
 /**
  *  **Autor**: Enrique Fernández - Campoamor Fernández
  * **Github**: https://github.com/Kikenvt/tarea-5-Dwec-Diw

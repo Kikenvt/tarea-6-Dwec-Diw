@@ -6,6 +6,8 @@ $font-primary: 'Kanit', sans-serif;
 $black: #0a0a0a;
 $background-color:#0a0a0a;
 $text-color: #b9b7b7;
+$form-color:#f7e0e0;
+$button-color:#a01313;
 
 $telefono: 480px;
 $tablet: 768px;
@@ -13,10 +15,10 @@ $desktop: 992px;
 $desktopXL: 1200px;
 
 :root {
-    --background-color:#0a0a0a;
-    --nav-background-color:#0a0a0a;
-    --form-color:#f7e0e0;
-    --card-btn-color:#a01313;
+    
+    
+   
+    
     --card-color:#f7e0e0;
     --button-color:#a01313;
     --shadow-color:rgba(0, 0, 0, 0.7);

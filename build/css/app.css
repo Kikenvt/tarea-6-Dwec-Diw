@@ -1,8 +1,4 @@
 :root {
-  --background-color:#0a0a0a;
-  --nav-background-color:#0a0a0a;
-  --form-color:#f7e0e0;
-  --card-btn-color:#a01313;
   --card-color:#f7e0e0;
   --button-color:#a01313;
   --shadow-color:rgba(0, 0, 0, 0.7);
@@ -386,6 +382,12 @@ body {
 .nav-list a:hover {
   filter: drop-shadow(0 0 0.8rem #a2b402);
 }
+.nav-list svg {
+  cursor: pointer;
+}
+.nav-list svg:hover {
+  filter: drop-shadow(0 0 0.8rem #a2b402);
+}
 
 .nav-logo {
   display: block;
@@ -445,7 +447,7 @@ body {
     flex-direction: column;
     justify-content: start;
     top: 0;
-    background-color: var(--nav-background-color);
+    background-color: #0a0a0a;
     width: 100%;
     border-radius: 10px;
     text-align: center;
@@ -611,7 +613,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #0a0a0a;
+  background-color: #b9b7b7;
+  color: #0a0a0a;
   padding: 1rem;
   height: 100%;
   width: 100%;
@@ -630,7 +633,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #b9b7b7;
+  background: #0a0a0a;
+  color: #b9b7b7;
   padding: 1rem;
   height: 100%;
   width: 100%;
@@ -682,7 +686,7 @@ body {
   padding: 1rem;
   border: none;
   border-radius: 0.5rem;
-  background: var(--card-btn-color);
+  background: #a01313;
   color: var(--card-color);
   font-size: var(--card-btn-font-size);
   cursor: pointer;
@@ -692,7 +696,7 @@ body {
 
 .card-btn:hover, .valid-form-button:hover {
   background: var(--card-color);
-  color: var(--card-btn-color);
+  color: #a01313;
 }
 
 .footer-body {
@@ -758,84 +762,6 @@ body {
     margin: 0 0.5rem;
     height: 60%;
     width: 60%;
-  }
-}
-.main-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.main-form h2 {
-  font-size: var(--main-form-font-size);
-  color: var(--form-color);
-  margin-bottom: 1rem;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: var(--form-color);
-  width: 60%;
-  min-width: 300px;
-  max-width: 600px;
-  background-color: #000000;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px var(--shadow-color);
-  padding: 1rem;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 0.5rem;
-  margin: 0.5rem 0;
-  border: none;
-  outline-color: var(--button-color);
-  border-radius: 0.5rem;
-  resize: none;
-  background-color: var(--background-color);
-  color: var(--form-color);
-}
-
-input[type=submit] {
-  background-color: var(--button-color);
-  color: var(--form-color);
-  cursor: pointer;
-}
-input[type=submit]:hover {
-  background-color: var(--form-color);
-  color: var(--button-color);
-}
-
-.errores {
-  font-size: 0.8rem;
-  color: red;
-}
-
-.valid-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10rem;
-  font-size: var(--main-form-font-size);
-}
-
-@media screen and (width < 768px) {
-  :root {
-    --nav-font-size:0.9rem;
-    --nav-logo-height:1.2rem;
-    --nav-logo-width:1.2rem;
-    --hero-image-height:50vh;
-    --body-text-font-size:0.9rem;
-    --card-title-font-size:1.2rem;
-    --card-text-font-size:0.6rem;
-    --card-btn-font-size:0.8rem;
-    --footer-body-font-size:0.6rem;
-    --main-form-font-size:1rem;
-    --hero-logo-size:5rem;
   }
 }
 #loading {
@@ -942,7 +868,7 @@ input[type=submit]:hover {
   z-index: 1000;
   display: grid;
   place-items: center;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .overlay picture {
   position: relative;
@@ -958,11 +884,92 @@ input[type=submit]:hover {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  background-color: var(--blanco);
+  background-color: #b9b7b7;
   color: black;
   display: grid;
   place-items: center;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-form h2 {
+  font-size: var(--main-form-font-size);
+  color: #f7e0e0;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f7e0e0;
+  width: 60%;
+  min-width: 300px;
+  max-width: 600px;
+  background-color: #000000;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px var(--shadow-color);
+  padding: 1rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: none;
+  outline-color: var(--button-color);
+  border-radius: 0.5rem;
+  resize: none;
+  background-color: #0a0a0a;
+  color: #f7e0e0;
+}
+
+input[type=submit] {
+  background-color: var(--button-color);
+  color: #f7e0e0;
+  cursor: pointer;
+  position: static;
+}
+input[type=submit]:hover {
+  background-color: #f7e0e0;
+  color: var(--button-color);
+}
+
+.errores {
+  font-size: 0.8rem;
+  color: red;
+}
+
+.valid-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rem;
+  font-size: var(--main-form-font-size);
+}
+
+@media screen and (width < 768px) {
+  :root {
+    --nav-font-size:0.9rem;
+    --nav-logo-height:1.2rem;
+    --nav-logo-width:1.2rem;
+    --hero-image-height:50vh;
+    --body-text-font-size:0.9rem;
+    --card-title-font-size:1.2rem;
+    --card-text-font-size:0.6rem;
+    --card-btn-font-size:0.8rem;
+    --footer-body-font-size:0.6rem;
+    --main-form-font-size:1rem;
+    --hero-logo-size:5rem;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

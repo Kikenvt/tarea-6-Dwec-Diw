@@ -10,47 +10,88 @@
 
     <body>
 		
-			<header>
-				<nav class="nav-container">
-					<div class="nav-logo">
-						<a href="/index.html">
-							<img src="/assets/imgs/Diamond_Dogs.svg.webp" alt="logo" />
-						</a>
-					</div>
-					<ul class="nav-list">
-						<li class="nav-item"><a href="/index.html">Index</a></li>
-						<li class="nav-item"><a href="#cards">About</a></li>
-						<li class="nav-item">
-							<a href="/templates/contacto.html">Contact</a>
-						</li>
-					</ul>
-					<div class="hamburger-menu">
-						<span class="line"></span>
-						<span class="line"></span>
-						<span class="line"></span>
-					</div>
-				</nav>
-			</header>
-	
-			<section class="video">
-				<div class="overlay">
-					
-					<div class="contenedor contenido-video">
-						<div class="hero-logo">
-							<img src="/assets/imgs/main-logo.svg" alt="">
-						</div>
-						<h1>Diamond Dogs: Elite Private Military Company</h1>
-						<p>
-							Welcome to Diamond Dogs, a premier private military company
-							dedicated to excellence in mercenary operations, strategic
-							management, and cutting-edge technology.
-						</p>
-					</div>
-					<video autoplay muted loop>
-					<source src="../video/Diamond_Dogs.mp4" type="video/mp4">
-					</video>
+		<header>
+			<nav class="nav-container">
+				<div class="nav-logo">
+					<a href="/index.html">
+						<img src="/assets/imgs/Diamond_Dogs.svg.webp" alt="logo" />
+					</a>
 				</div>
-			</section>
+				<ul class="nav-list">
+					<li class="nav-item"><a href="/index.html">Index</a></li>
+					<li class="nav-item"><a href="#about">About</a></li>
+					<li class="nav-item"><a href="#services">Services</a></li>
+					<li class="nav-item">
+						<a href="/templates/contacto.html">Contact</a>
+					</li>
+					<li class="nav-item" id="darkMode">
+						<svg
+							id="moon"
+							style="display: none; margin-right: 1rem"
+							data-slot="icon"
+							aria-hidden="true"
+							fill="none"
+							stroke-width="1.5"
+							stroke="#FFFFFF"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+						>
+							<path
+								d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></path>
+						</svg>
+						<svg
+							id="sun"
+							style="display: block; margin-right: 1rem"
+							data-slot="icon"
+							aria-hidden="true"
+							fill="none"
+							stroke-width="1.5"
+							stroke="#FFFFFF"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+						>
+							<path
+								d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></path>
+						</svg>
+					</li>
+				</ul>
+				<div class="hamburger-menu">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</div>
+			</nav>
+		</header>
+		
+				<section class="video-container">
+					<div class="overlay">
+						<div class="contenedor contenido-video">
+							<div class="hero-logo">
+								<img src="/assets/imgs/main-logo.svg" alt="" />
+							</div>
+							<h1>Diamond Dogs: Elite Private Military Company</h1>
+							<p>
+								Welcome to Diamond Dogs, a premier private military company
+								dedicated to excellence in mercenary operations, strategic
+								management, and cutting-edge technology.
+							</p>
+						</div>
+						<video autoplay muted loop>
+							<source src="../video/Diamond_Dogs.mp4" type="video/mp4" />
+							<source src="../video/Diamond_Dogs.webm" type="video/webm" />
+						</video>
+					</div>
+				</section>
 
         <section class="form-container">
             <div class="main-form">
@@ -61,7 +102,7 @@
                     <input type="text" name="email" id="email" placeholder="Email">
                     <input type="text" name="telefono" id="telefono" placeholder="Phone">
                     <textarea name="mensaje" id="mensaje" placeholder="Explain what you need..." cols="30" rows="10"></textarea>
-                    <input type="submit" id="enviar" value="Send" class="btn">
+                    <input type="submit" id="enviar" value="Send" class="btn-form">
         
                     <ul id="errores" class="errores"></ul>
                 </form>
@@ -116,6 +157,6 @@
 			</div>
 		</footer>
         <script src="../scripts/formValidation.js"></script>
-        <script src="../scripts/navBar.js"></script>
+        <script type="module" src="/scripts/main.js"></script>
 </body>
 </html>

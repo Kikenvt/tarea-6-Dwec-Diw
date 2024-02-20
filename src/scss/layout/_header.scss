@@ -39,6 +39,15 @@
     a:hover {
       filter: drop-shadow(0 0 0.8rem #a2b402);
     }
+
+    svg{
+      cursor: pointer;
+    }
+
+    svg:hover{
+      filter: drop-shadow(0 0 0.8rem #a2b402);
+    }
+    
   }
   
   .nav-logo {
@@ -105,7 +114,7 @@
       flex-direction: column;
       justify-content: start;
       top: 0;
-      background-color: var(--nav-background-color);
+      background-color: var.$background-color;
       width: 100%;
       border-radius: 10px;
       text-align: center;
