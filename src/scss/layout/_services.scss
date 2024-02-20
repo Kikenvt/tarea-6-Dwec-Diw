@@ -30,7 +30,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--card-background-color);
+    background: var.$background-color;
     padding: 1rem;
     height: 100%;
     width: 100%;
@@ -45,6 +45,26 @@
     }
   }
   
+  .card-light-theme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var.$text-color;
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    word-wrap: break-word;
+  
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    }
+  }
+
   .card-title {
     font-size: var(--card-title-font-size);
     margin-bottom: 1rem;

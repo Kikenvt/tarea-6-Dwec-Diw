@@ -19,8 +19,5 @@ body {
 .light-theme {
     background-color: var.$text-color !important;
     color: var.$background-color !important;
-    &.services {
-      background-color: var.$background-color !important;
-    }
 }
 
