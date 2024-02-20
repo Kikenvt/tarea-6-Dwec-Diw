@@ -27,6 +27,8 @@
 					<li class="nav-item">
 						<a href="/templates/contacto.html">Contact</a>
 					</li>
+					<li class="nav-item"><button id="darkMode">Dark</button></li>
+					
 				</ul>
 				<div class="hamburger-menu">
 					<span class="line"></span>
@@ -51,6 +53,7 @@
 				</div>
 				<video autoplay muted loop>
 					<source src="../video/Diamond_Dogs.mp4" type="video/mp4" />
+					<source src="../video/Diamond_Dogs.webm" type="video/webm" />
 				</video>
 			</div>
 		</section>
@@ -135,12 +138,17 @@
 		</section>
 
 		<!-- GALERIA -->
+		<div class="gallery">
 
-		<section id="galeria" class="galeria contenedor">
-			<h3>Galería</h3>
-
-			<ul class="galeria-imagenes"></ul>
-		</section>
+			<div class="title">
+				<h3>Gallery</h3>
+			</div>
+			<div class="slider">
+				<button class="btn btn-next">></button>
+				<button class="btn btn-prev"><</button>
+			</div>
+		</div>
+		
 
 		<!-- FOOTER -->
 		<footer>
@@ -192,4 +200,7 @@
 		</footer>
 	</body>
 	<script src="/scripts/navBar.js"></script>
+	<script src="/scripts/slider.js"></script>
+	<script src="/scripts/darkMode.js"></script>
+	
 </html>

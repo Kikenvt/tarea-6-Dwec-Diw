@@ -6,7 +6,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--nav-background-color);
+    background-color: var.$background-color;
+    color: var.$text-color;
     box-shadow: 0 0 10px var(--shadow-color);
     position: fixed;
     top: 0;

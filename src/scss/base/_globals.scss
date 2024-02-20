@@ -9,9 +9,18 @@
 }
 
 body {
-    background-color: var.$black;
+    background-color: var.$background-color;
     font-size: 16px;
     line-height: 1.5;
-    color: #b9b7b7;
+    color: var.$text-color;
     font-family: var.$font-primary;
   }
+
+.light-theme {
+    background-color: var.$text-color !important;
+    color: var.$background-color !important;
+    &.services {
+      background-color: var.$background-color !important;
+    }
+}
+

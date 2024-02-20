@@ -1,4 +1,4 @@
-
+@use '../base/variables' as var;
 
 .services {
     display: flex;
@@ -15,7 +15,7 @@
   }
   
   .cards-container {
-    background: var(--background-color);
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-gap: 2rem;
