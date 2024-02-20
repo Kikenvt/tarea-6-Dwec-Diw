@@ -1,83 +1,84 @@
 @use '../base/variables' as var;
 
 .main-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  
-    h2 {
-      font-size: var(--main-form-font-size);
-      color: var.$form-color;
-      margin-bottom: 1rem;
-    }
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var.$form-color;
-    width: 60%;
-    min-width: 300px;
-    max-width: 600px;
-    background-color: #000000;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 10px var(--shadow-color);
-    padding: 1rem;
-  }
-  
-  input, textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin: 0.5rem 0;
-    border: none;
-    outline-color: var(--button-color);
-    border-radius: 0.5rem;
-    resize: none;
-    background-color: var.$background-color;
-    color: var.$form-color;
-  }
-  
-  input[type=submit] {
-    background-color: var(--button-color);
-    color: var.$form-color;
-    cursor: pointer;
-    position: static;
-  
-    &:hover {
-      background-color: var.$form-color;
-      color: var(--button-color);
-    }
-  }
-  
-  .errores {
-    font-size: 0.8rem;
-    color: red;
-  }
-  
-  .valid-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10rem;
-    font-size: var(--main-form-font-size);
-  }
-  
-  @media screen and (width < 768px) {
-    :root {
-      --nav-font-size:0.9rem;
-      --nav-logo-height:1.2rem;
-      --nav-logo-width:1.2rem;
-      --hero-image-height:50vh;
-      --body-text-font-size:0.9rem;
-      --card-title-font-size:1.2rem;
-      --card-text-font-size:0.6rem;
-      --card-btn-font-size:0.8rem;
-      --footer-body-font-size:0.6rem;
-      --main-form-font-size:1rem;
-      --hero-logo-size:5rem;
-    }
-  }
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	h2 {
+		font-size: var(--main-form-font-size);
+		color: var.$form-color;
+		margin-bottom: 1rem;
+	}
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var.$form-color;
+	width: 60%;
+	min-width: 300px;
+	max-width: 600px;
+	background-color: #000000;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 10px var.$shadow-color;
+	padding: 1rem;
+}
+
+input,
+textarea {
+	width: 100%;
+	padding: 0.5rem;
+	margin: 0.5rem 0;
+	border: none;
+	outline-color: var.$button-color;
+	border-radius: 0.5rem;
+	resize: none;
+	background-color: var.$background-color;
+	color: var.$form-color;
+}
+
+input[type='submit'] {
+	background-color: var.$button-color;
+	color: var.$form-color;
+	cursor: pointer;
+	position: static;
+
+	&:hover {
+		background-color: var.$form-color;
+		color: var.$button-color;
+	}
+}
+
+.errores {
+	font-size: 0.8rem;
+	color: red;
+}
+
+.valid-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10rem;
+	font-size: var(--main-form-font-size);
+}
+
+@media screen and (width < 768px) {
+	:root {
+		--nav-font-size: 0.9rem;
+		--nav-logo-height: 1.2rem;
+		--nav-logo-width: 1.2rem;
+		--hero-image-height: 50vh;
+		--body-text-font-size: 0.9rem;
+		--card-title-font-size: 1.2rem;
+		--card-text-font-size: 0.6rem;
+		--card-btn-font-size: 0.8rem;
+		--footer-body-font-size: 0.6rem;
+		--main-form-font-size: 1rem;
+		--hero-logo-size: 5rem;
+	}
+}

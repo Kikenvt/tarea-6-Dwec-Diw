@@ -1,23 +1,23 @@
 @use 'variables' as var;
 
 @mixin telefono {
-    @media (max-width: var.$telefono) {
-        @content;
-    }
+	@media (max-width: var.$telefono) {
+		@content;
+	}
 }
 
 @mixin tablet {
-    @media (max-width: var.$tablet) {
-        @content;
-    }
+	@media (max-width: var.$tablet) {
+		@content;
+	}
 }
 @mixin desktop {
-    @media (max-width: var.$desktop) {
-        @content;
-    }
+	@media (max-width: var.$desktop) {
+		@content;
+	}
 }
 @mixin desktopXL {
-    @media (max-width: var.$desktopXL) {
-        @content;
-    }
+	@media (max-width: var.$desktopXL) {
+		@content;
+	}
 }

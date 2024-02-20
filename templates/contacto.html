@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Diamond Dogs</title>
-        <link rel="shortcut icon" href="/assets/imgs/main-lgo.svg" type="image/x-icon">
+		<link
+			rel="shortcut icon"
+			href="/assets/imgs/main-lgo.svg"
+			type="image/x-icon"
+		/>
 		<link rel="stylesheet" href="/build/css/app.css" />
 	</head>
 
-    <body>
-		
+	<body>
 		<header>
 			<nav class="nav-container">
 				<div class="nav-logo">
@@ -72,44 +75,63 @@
 				</div>
 			</nav>
 		</header>
-		
-				<section class="video-container">
-					<div class="overlay">
-						<div class="contenedor contenido-video">
-							<div class="hero-logo">
-								<img src="/assets/imgs/main-logo.svg" alt="" />
-							</div>
-							<h1>Diamond Dogs: Elite Private Military Company</h1>
-							<p>
-								Welcome to Diamond Dogs, a premier private military company
-								dedicated to excellence in mercenary operations, strategic
-								management, and cutting-edge technology.
-							</p>
-						</div>
-						<video autoplay muted loop>
-							<source src="../video/Diamond_Dogs.mp4" type="video/mp4" />
-							<source src="../video/Diamond_Dogs.webm" type="video/webm" />
-						</video>
+
+		<section class="video-container">
+			<div class="overlay">
+				<div class="contenedor contenido-video">
+					<div class="hero-logo">
+						<img src="/assets/imgs/main-logo.svg" alt="" />
 					</div>
-				</section>
+					<h1>Diamond Dogs: Elite Private Military Company</h1>
+					<p>
+						Welcome to Diamond Dogs, a premier private military company
+						dedicated to excellence in mercenary operations, strategic
+						management, and cutting-edge technology.
+					</p>
+				</div>
+				<video autoplay muted loop>
+					<source src="../video/Diamond_Dogs.mp4" type="video/mp4" />
+					<source src="../video/Diamond_Dogs.webm" type="video/webm" />
+				</video>
+			</div>
+		</section>
 
-        <section class="form-container">
-            <div class="main-form">
-                <h2>Contact with us for further information:</h2>
-                <form id="formulario" action="/templates/envioCorrecto.html" method="get">
-                    <input type="text" name="nombre" id="nombre" placeholder="Name">
-                    <input type="text" name="apellido" id="apellido" placeholder="Surname">
-                    <input type="text" name="email" id="email" placeholder="Email">
-                    <input type="text" name="telefono" id="telefono" placeholder="Phone">
-                    <textarea name="mensaje" id="mensaje" placeholder="Explain what you need..." cols="30" rows="10"></textarea>
-                    <input type="submit" id="enviar" value="Send" class="btn-form">
-        
-                    <ul id="errores" class="errores"></ul>
-                </form>
-            </div>
+		<section class="form-container">
+			<div class="main-form">
+				<h2>Contact with us for further information:</h2>
+				<form
+					id="formulario"
+					action="/templates/envioCorrecto.html"
+					method="get"
+				>
+					<input type="text" name="nombre" id="nombre" placeholder="Name" />
+					<input
+						type="text"
+						name="apellido"
+						id="apellido"
+						placeholder="Surname"
+					/>
+					<input type="text" name="email" id="email" placeholder="Email" />
+					<input
+						type="text"
+						name="telefono"
+						id="telefono"
+						placeholder="Phone"
+					/>
+					<textarea
+						name="mensaje"
+						id="mensaje"
+						placeholder="Explain what you need..."
+						cols="30"
+						rows="10"
+					></textarea>
+					<input type="submit" id="enviar" value="Send" class="btn-form" />
 
-        </section>
-        <footer>
+					<ul id="errores" class="errores"></ul>
+				</form>
+			</div>
+		</section>
+		<footer>
 			<div class="footer-container">
 				<div class="footer-body">
 					<div class="footer-item">
@@ -156,7 +178,7 @@
 				</div>
 			</div>
 		</footer>
-        <script src="../scripts/formValidation.js"></script>
-        <script type="module" src="src/scripts/main.js"></script>
-</body>
+		<script src="../scripts/formValidation.js"></script>
+		<script type="module" src="src/scripts/main.js"></script>
+	</body>
 </html>

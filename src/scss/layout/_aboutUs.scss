@@ -2,64 +2,61 @@
 @use '../base/variables' as var;
 
 .body-text {
-    display: flex;
-    font-size: var(--body-text-font-size);
-    margin-bottom: 1rem;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-    padding: 3rem;
-  }
+	display: flex;
+	font-size: var(--body-text-font-size);
+	margin-bottom: 1rem;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem;
+	padding: 3rem;
+}
 
-    .body-text p {
-        margin: 1rem;
-        font-size: 2rem;
-    }
-  
-  .imagen-about-us {
-    
-    margin-right: 3rem;
-    filter: drop-shadow(0 0 0.5rem #a2b402);
-    border-radius: 0.5rem;
-  
-    img {
-      width: 100%;
-      height: 100%;
-      border-radius: 0.5rem;
-    }
-  }
-  
-@include mix.tablet{
+.body-text p {
+	margin: 1rem;
+	font-size: 2rem;
+}
+
+.imagen-about-us {
+	margin-right: 3rem;
+	filter: drop-shadow(0 0 0.5rem #a2b402);
+	border-radius: 0.5rem;
+
+	img {
+		width: 100%;
+		height: 100%;
+		border-radius: 0.5rem;
+	}
+}
+
+@include mix.tablet {
 	.body-text {
-        font-size: var(--body-text-fotn-size-small);
+		font-size: var(--body-text-fotn-size-small);
 		flex-direction: column;
 	}
 
-    .body-text p {
-        
-        font-size: 1rem;
-    }
-   
-	.imagen-about-us{
+	.body-text p {
+		font-size: 1rem;
+	}
+
+	.imagen-about-us {
 		margin-right: 0;
 	}
 }
 
-@include mix.telefono{
-    .body-text p {
-        font-size: 0.5rem;
-    }
+@include mix.telefono {
+	.body-text p {
+		font-size: 0.5rem;
+	}
 }
 
-@include mix.desktop{
-    .body-text p {
-        font-size: 0.9rem;
-    }
+@include mix.desktop {
+	.body-text p {
+		font-size: 0.9rem;
+	}
 }
-  
-@include mix.desktopXL{
-    .body-text p {
-        font-size: 1.5rem;
-    }
+
+@include mix.desktopXL {
+	.body-text p {
+		font-size: 1.5rem;
+	}
 }
-  

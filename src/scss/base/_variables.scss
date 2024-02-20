@@ -4,10 +4,13 @@ $font-primary: 'Kanit', sans-serif;
 // Colors
 
 $black: #0a0a0a;
-$background-color:#0a0a0a;
+$background-color: #0a0a0a;
 $text-color: #b9b7b7;
-$form-color:#f7e0e0;
-$button-color:#a01313;
+$form-color: #f7e0e0;
+$button-color: #a01313;
+$card-color: #f7e0e0;
+$button-color: #a01313;
+$shadow-color: rgba(0, 0, 0, 0.7);
 
 $telefono: 480px;
 $tablet: 768px;
@@ -15,25 +18,16 @@ $desktop: 992px;
 $desktopXL: 1200px;
 
 :root {
-    
-    
-   
-    
-    --card-color:#f7e0e0;
-    --button-color:#a01313;
-    --shadow-color:rgba(0, 0, 0, 0.7);
-    --nav-font-size:1rem;
-    --nav-logo-height:3rem;
-    --nav-logo-width:3rem;
-    --card-background-color:#3d3d3d;
-    --body-text-font-size:2rem;
-    --body-text-fotn-size-small:1rem;
-    --card-title-font-size:1.5rem;
-    --card-text-font-size:1rem;
-    --card-btn-font-size:1rem;
-    --footer-body-font-size:0.7rem;
-    --footer-social-font-size:1rem;
-    --footer-background-color:#181818;
-    --main-form-font-size:1.9rem;
-    --hero-logo-size:6rem;
+	--nav-font-size: 1rem;
+	--nav-logo-height: 3rem;
+	--nav-logo-width: 3rem;
+	--body-text-font-size: 2rem;
+	--body-text-fotn-size-small: 1rem;
+	--card-title-font-size: 1.5rem;
+	--card-text-font-size: 1rem;
+	--card-btn-font-size: 1rem;
+	--footer-body-font-size: 0.7rem;
+	--footer-social-font-size: 1rem;
+	--main-form-font-size: 1.9rem;
+	--hero-logo-size: 6rem;
 }
