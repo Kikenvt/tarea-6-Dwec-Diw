@@ -79,7 +79,7 @@ function mostrarImagen(i) {
   const imagen = document.createElement('picture');
 	imagen.innerHTML = `
   
-  <img loading="lazy" width="200" height="300" src="assets/imgs/gallery/${i}.jpg" alt="Imagen ${i}">
+  <img loading="lazy" width="200" height="300" src="assets/imgs/gallery/big/${i}.jpg" alt="Imagen ${i}">
   `;
   
 	// Crea el overlay para mostrar la imagen

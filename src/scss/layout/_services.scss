@@ -36,7 +36,7 @@
     height: 100%;
     width: 100%;
     border-radius: 0.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    filter: drop-shadow(0 0 0.5rem #a2b402);
     transition: all 0.3s ease;
     word-wrap: break-word;
   
@@ -53,6 +53,7 @@
     align-items: center;
     background: var.$background-color;
     color: var.$text-color;
+    filter: drop-shadow(0 0 0.5rem #000000);
     padding: 1rem;
     height: 100%;
     width: 100%;

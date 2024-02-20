@@ -619,7 +619,7 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(0 0 0.5rem #a2b402);
   transition: all 0.3s ease;
   word-wrap: break-word;
 }
@@ -635,6 +635,7 @@ body {
   align-items: center;
   background: #0a0a0a;
   color: #b9b7b7;
+  filter: drop-shadow(0 0 0.5rem #000000);
   padding: 1rem;
   height: 100%;
   width: 100%;
